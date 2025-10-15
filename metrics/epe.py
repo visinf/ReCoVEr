@@ -1,0 +1,23 @@
+import torch
+from torchmetrics import Metric
+
+from .functional import calc_epe
+
+
+class EPE(Metric):
+    def __init__(self, max_flow=None, spring_mode=False):
+        super().__init__()
+        self.add_state("epe", default=torch.tensor(0).float(), dist_reduce_fx="sum")
+        self.add_state("total", default=torch.tensor(0).long(), dist_reduce_fx="sum")
+
+        self.max_flow = max_flow
+        self.spring_mode = spring_mode
+
+    def update(self, flow_pred, flow_gt, valid=None):
+        epe = calc_epe(flow_pred, flow_gt, valid, self.max_flow, self.spring_mode)
+
+        self.total += epe.numel()
+        self.epe += epe.sum()
+
+    def compute(self):
+        return self.epe / self.total

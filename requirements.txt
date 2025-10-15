@@ -1,0 +1,9 @@
+torch==2.4.1
+torchmetrics==1.4.0.post0
+torchvision==0.19.1
+tqdm
+scipy==1.14.0
+opencv-python
+h5py
+matplotlib
+tensorboard
