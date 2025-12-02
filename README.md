@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Removing Cost Volumes from Optical Flow Estimators</h1>
+<h1><a href="https://arxiv.org/abs/2510.13317">Removing Cost Volumes from Optical Flow Estimators</a></h1>
 
 [**Simon Kiefhaber**](https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/visinf_team_details_125120.en.jsp)<sup>1,2</sup> &nbsp;&nbsp;&nbsp;
 [**Stefan Roth**](https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp)<sup>1,2</sup> &nbsp;&nbsp;&nbsp;
@@ -10,7 +10,12 @@
 
 <h3>ICCV 2025 Oral</h3>
 
-<a href="https://visinf.github.io/recover/"><img src='https://img.shields.io/badge/Project Page-grey' alt='Project Page URL'></a>
+<p align="center">
+  <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Kiefhaber_Removing_Cost_Volumes_from_Optical_Flow_Estimators_ICCV_2025_paper.pdf"><img src="https://img.shields.io/badge/ICCV-2025-blue"></a>
+  <a href="https://arxiv.org/abs/2510.13317"><img src="https://img.shields.io/badge/arXiv-2407.17929-b31b1b.svg"></a>
+  <a href="https://visinf.github.io/recover/"><img src='https://img.shields.io/badge/Project Page-grey' alt='Project Page URL'></a>
+</p>
+
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Framework](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?&logo=PyTorch&logoColor=white)](https://pytorch.org/)
